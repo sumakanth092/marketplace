@@ -43,5 +43,6 @@ jobs:
           cd ${{ github.workspace }}
           echo "Current path: $(pwd)"
           ls -al
-          python manage.py test config.tests.test_basic
+          python manage.py test
+        working-directory: ${{ github.workspace }}
 
