@@ -5,7 +5,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'django-insecure-5_u9uopcs8lt2u#fs3p3ii7k2@*t0tfxm8cjt9xn$t-6e^iy^4'
 DEBUG = True
-ALLOWED_HOSTS = ["marketstore.onrender.com"]
+ALLOWED_HOSTS = ["marketstore-4s9a.onrender.com"]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
