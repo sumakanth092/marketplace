@@ -16,6 +16,7 @@ services:
       pip install -r requirements.txt
       python manage.py collectstatic --noinput
       python manage.py migrate --noinput
+      python manage.py createsu
     startCommand: gunicorn config.wsgi:application
     envVars:
       - key: DATABASE_URL
