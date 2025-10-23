@@ -6,3 +6,12 @@ from .models import User
 class CustomUserAdmin(UserAdmin):
     model = User
     list_display = ['username', 'email', 'is_staff', 'is_seller']
+
+    # Add custom fields to the "User" form in admin
+    fieldsets = UserAdmin.fieldsets + (
+        (None, {'fields': ('is_seller',)}),
+    )
+
+    add_fieldsets = UserAdmin.add_fieldsets + (
+        (None, {'fields': ('is_seller',)}),
+    )
